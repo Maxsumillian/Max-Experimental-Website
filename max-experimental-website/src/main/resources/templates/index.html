@@ -2,9 +2,49 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Hello Thymeleaf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Experimentals</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-<h1>Hello Thymeleaf!</h1>
+<header>
+    <div class="container">
+        <h1>Max Experimentals</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here you can showcase your experimental work.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write about your learning journey or portfolio goals.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email or social links here.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Max Experimentals</p>
+    </div>
+</footer>
+
+<!-- Link JS -->
+<script th:src="@{/js/main.js}"></script>
 </body>
 </html>
